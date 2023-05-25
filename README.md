@@ -12,6 +12,7 @@ Repository configuration needs one of the following:
 
 - application.properties file in the same folder as the jar if run standalone.
 
+<hr>
 
 File content should be:
 
