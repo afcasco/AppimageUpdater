@@ -1,6 +1,11 @@
 # AppimageUpdater
 Automatically update an AppImage to the latest github release
 
+Downloads and moves the latest AppImage from github releases if
+it's not already detected in the specified folder.
+
+<hr>
+
 Repository configuration needs one of the following:
 
 - Edit src/main/resources/application.properties file if running from your IDE.
@@ -14,5 +19,3 @@ File content should be:
 - repo.owner=repositoryOwnerName
 - repo.name=repositoryName
 
-Downloads and moves the latest AppImage from github releases if
-it's not already detected in the specified folder.
