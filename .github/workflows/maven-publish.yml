@@ -29,7 +29,7 @@ jobs:
 
 
     - name: execut mvn package
-      run: mvn package && ls -la
+      run: mvn package
 
     # debug
     - run: git version
@@ -69,6 +69,6 @@ jobs:
       with:
         name: ${{ env.GITHUB_REF_NAME }}
         tag: ${{ env.GITHUB_REF_NAME }}
-        artifacts: "build/libs/springBoot.jar"
+        artifacts: "*.jar"
         bodyFile: "body.log"
         token: ${{ secrets.GITHUB_TOKEN }}
