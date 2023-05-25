@@ -1,9 +1,18 @@
 # AppimageUpdater
 Automatically update an AppImage to the latest github release
 
-Edit src/main/resources/application.properties file, or
-add your own properties file in the same directory as the jar 
-to have it overriden.
+Repository configuration needs one of the following:
 
-Downloads and moves the latest AppImage github release of a repo if 
+- Edit src/main/resources/application.properties file if running from your IDE.
+
+- application.properties file in the same folder as the jar if run standalone.
+
+
+File content should be:
+
+- appimage.folder=/path/to/desired/folder
+- repo.owner=repositoryOwnerName
+- repo.name=repositoryName
+
+Downloads and moves the latest AppImage from github releases if
 it's not already detected in the specified folder.
